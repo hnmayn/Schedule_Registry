@@ -44,7 +44,7 @@
 
         <div id="pagination">
             (全 ${employees_count} 件)<br />
-            <c:forEach var="i" begin="1" end="${((employees_coubt -1) / maxRow) + 1}" step="1">
+            <c:forEach var="i" begin="1" end="${((employees_count - 1) / maxRow) + 1}" step="1">
                 <c:choose>
                     <c:when test="${i == page}">
                         <c:out value="${i}" />&nbsp;
@@ -55,6 +55,6 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href="<c:url value='?action="${actEmp}&command=${commNew}' />">新規従業員の登録</a></p>
+        <p><a href="<c:url value='?action=${actEmp}&command=${commNew}' />">新規従業員の登録</a></p>
     </c:param>
 </c:import>
