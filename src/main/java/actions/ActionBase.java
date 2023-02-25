@@ -85,7 +85,7 @@ public abstract class ActionBase {
     protected void forward(ForwardConst target) throws ServletException, IOException{
 
         // jspファイルの相対パスを作成
-        String forward = String .format ("/WEB-INF/views/%s.jsp", target.getValue()); // %って何？
+        String forward = String .format ("/WEB-INF/views/%s.jsp", target.getValue());
         RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
 
         // jspファイルの呼び出し
@@ -215,7 +215,7 @@ public abstract class ActionBase {
      * @param key パラメータ名
      * @param value パラメータの値
      */
-    protected <V> void putessionScope(AttributeConst key, V value) {
+    protected <V> void putSessionScope(AttributeConst key, V value) {
         request.getSession().setAttribute(key.getValue(), value);
     }
 
