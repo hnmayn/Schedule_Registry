@@ -5,13 +5,13 @@
 <%@ page import="constants.AttributeConst" %>
 
 <c:set var="actEmp" value="${ForwardConst.ACT_EMP.getValue()}" />
-<c:set var="commId" value="${ForwardConst.CMD_INDEX.getValue()}" />
+<c:set var="commIdx" value="${ForwardConst.CMD_INDEX.getValue()}" />
 <c:set var="commEdit" value="${ForwardConst.CMD_EDIT.getValue()}" />
 
 <c:import url="/WEB-INF/views/layout/app.jsp">
     <c:param name="content">
 
-        <h2>id : ${employee.id} の従業員詳細ページ</h2>
+        <h2>id : ${employee.id} の従業員情報 詳細ページ</h2>
 
     <table>
         <tbody>
