@@ -30,7 +30,7 @@ public enum ForwardConst {
     // jsp
     FW_ERR_UNKNOWN("error/unknown"),
     FW_TOP_INDEX("topPage/index"),
-    FE_LOGIN("login/login"),
+    FW_LOGIN("login/login"),
     FW_EMP_INDEX("employees/index"),
     FW_EMP_SHOW("employees/show"),
     FW_EMP_NEW("employees/new"),
