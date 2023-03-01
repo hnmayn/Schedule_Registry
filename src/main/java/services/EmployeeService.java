@@ -48,7 +48,8 @@ public class EmployeeService extends ServiceBase {
      * @param plainPass パスワード文字列
      * @param pepper pepper文字列
      * @return 取得データのインスタンス 取得できない場合null
-         */public EmployeeView findOne(String code, String plainPass, String pepper) {
+     */
+    public EmployeeView findOne(String code, String plainPass, String pepper) {
              Employee e = null;
              try {
                  // パスワードのハッシュ化
