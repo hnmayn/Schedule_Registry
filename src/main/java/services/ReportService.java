@@ -52,7 +52,7 @@ public class ReportService extends ServiceBase {
      */
     public List<ReportView> getAllPerPage(int page){
 
-        List<Report> reports = em.createNamedQuery(JpaConst.Q_EMP_GET_ALL, Report.class)
+        List<Report> reports = em.createNamedQuery(JpaConst.Q_REP_GET_ALL, Report.class)
                 .setFirstResult(JpaConst.ROW_PER_PAGE * (page - 1))
                 .setMaxResults(JpaConst.ROW_PER_PAGE)
                 .getResultList();
