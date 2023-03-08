@@ -89,7 +89,7 @@ public class LoginFilter implements Filter {
                     } else {
                       //上記以外の認証系Actionはエラー画面
 
-                        String forward = String.format("/WEB-INF/views/%.jsp", "error/unknown");
+                        String forward = String.format("/WEB-INF/views/%s.jsp", "error/unknown");
                         RequestDispatcher dispatcher = request.getRequestDispatcher(forward);
                         dispatcher.forward(request, response);
 
