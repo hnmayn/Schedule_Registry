@@ -40,11 +40,15 @@ public class EmployeeConverter {
     }
 
     /**
-     * ViewモデルのインスタンスからDTOモデルのインスタンスを作成する
-     * @param ev EmployeeViewのインスタンス
-     * @return Employeeのインスタンス
+     * DTOモデルのインスタンスからViewモデルのインスタンスを作成する
+     * @param e Employeeのインスタンス
+     * @return EmployeeViewのインスタンス
      */
     public static EmployeeView toView(Employee e) {
+
+        if(e == null) {
+            return null;
+        }
 
         return new EmployeeView(
                 e.getId(),
