@@ -18,7 +18,7 @@
                 <c:out value="${flush}"></c:out>
             </div>
         </c:if>
-        <h2>日報管理システムへようこそ</h2>
+        <h2>Schedule Registryへようこそ</h2>
         <h3>【自分の日報 一覧】</h3>
         <table id="report_list">
             <tbody>
