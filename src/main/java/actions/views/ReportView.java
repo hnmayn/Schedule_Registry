@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * 日報情報について画面の入力値・出力値を扱うViewモデル
+ * スケジュール情報について画面の入力値・出力値を扱うViewモデル
  *
  */
 @Getter //全てのクラスフィールドについてgetterを自動生成する(Lombok)
@@ -24,22 +24,22 @@ public class ReportView {
     private Integer id;
 
     /**
-     * 日報を登録した従業員
+     * スケジュールを登録した従業員
      */
     private EmployeeView employee;
 
     /**
-     * いつの日報かを示す日付
+     * いつのスケジュールかを示す日付
      */
     private LocalDate reportDate;
 
     /**
-     * 日報のタイトル
+     * スケジュールのタイトル
      */
     private String title;
 
     /**
-     * 日報の内容
+     * スケジュールの内容
      */
     private String content;
 

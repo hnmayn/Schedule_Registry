@@ -12,7 +12,7 @@
 <c:import url="/WEB-INF/views/layout/app.jsp">
     <c:param name="content">
 
-        <h2>日報 詳細ページ</h2>
+        <h2>スケジュール 詳細ページ</h2>
 
         <table>
             <tbody>
@@ -48,7 +48,7 @@
 
         <c:if test="${sessionScope.login_employee.id == report.employee.id}">
             <p>
-                <a href="<c:url value='?action=${actRep}&command=${commEdt}&id=${report.id}' />">この日報を編集する</a>
+                <a href="<c:url value='?action=${actRep}&command=${commEdt}&id=${report.id}' />">このスケジュールを編集する</a>
             </p>
         </c:if>
 

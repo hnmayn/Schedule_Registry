@@ -15,7 +15,7 @@
                 <c:out value="${flush}"></c:out>
             </div>
         </c:if>
-        <h2>日報 一覧</h2>
+        <h2>スケジュール 一覧</h2>
         <table id="report_list">
             <tbody>
                 <tr>
@@ -52,7 +52,7 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href="<c:url value='?action=${actRep}&command=${commNew}' />">新規日報の登録</a></p>
+        <p><a href="<c:url value='?action=${actRep}&command=${commNew}' />">新規スケジュールの登録</a></p>
 
     </c:param>
 </c:import>

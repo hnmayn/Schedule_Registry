@@ -19,7 +19,7 @@
             </div>
         </c:if>
         <h2>Schedule Registryへようこそ</h2>
-        <h3>【自分の日報 一覧】</h3>
+        <h3>【自分のスケジュール 一覧】</h3>
         <table id="report_list">
             <tbody>
                 <tr>
@@ -53,6 +53,6 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href="<c:url value='?action=${actRep}&command=${commNew}' />">新規日報の登録</a></p>
+        <p><a href="<c:url value='?action=${actRep}&command=${commNew}' />">新規スケジュールの登録</a></p>
     </c:param>
 </c:import>

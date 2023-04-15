@@ -7,13 +7,13 @@ import actions.views.ReportView;
 import constants.MessageConst;
 
 /**
- * 日報インスタンスに設定されている値のバリデーションを行うクラス
+ * スケジュールインスタンスに設定されている値のバリデーションを行うクラス
  */
 public class ReportValidator {
 
     /**
-     * 日報インスタンスの各項目についてバリデーションを行う
-     * @param rv 日報インスタンス
+     * スケジュールインスタンスの各項目についてバリデーションを行う
+     * @param rv スケジュールインスタンス
      * @return エラーのリスト
      */
     public static List<String> validate(ReportView rv) {
