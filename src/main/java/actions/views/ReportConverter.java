@@ -6,7 +6,7 @@ import java.util.List;
 import models.Report;
 
 /**
- * スケジュールデータのDTOモデル⇔Viewモデルの変換を行うクラス
+ * 日報データのDTOモデル⇔Viewモデルの変換を行うクラス
  *
  */
 public class ReportConverter {

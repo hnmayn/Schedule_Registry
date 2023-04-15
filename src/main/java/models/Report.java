@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * スケジュールデータのDTOモデル
+ * 日報データのDTOモデル
  *
  */
 @Table(name = JpaConst.TABLE_REP)
@@ -57,26 +57,26 @@ public class Report {
     private Integer id;
 
     /**
-     * スケジュールを登録した従業員
+     * 日報を登録した従業員
      */
     @ManyToOne
     @JoinColumn(name = JpaConst.REP_COL_EMP, nullable = false)
     private Employee employee;
 
     /**
-     * いつのスケジュールかを示す日付
+     * いつの日報かを示す日付
      */
     @Column(name = JpaConst.REP_COL_REP_DATE, nullable = false)
     private LocalDate reportDate;
 
     /**
-     * スケジュールのタイトル
+     * 日報のタイトル
      */
     @Column(name = JpaConst.REP_COL_TITLE, length = 255, nullable = false)
     private String title;
 
     /**
-     * スケジュールの内容
+     * 日報の内容
      */
     @Lob
     @Column(name = JpaConst.REP_COL_CONTENT, nullable = false)

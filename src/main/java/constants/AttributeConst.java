@@ -42,7 +42,7 @@ public enum AttributeConst {
     DEL_FLAG_TRUE(1),
     DEL_FLAG_FALSE(0),
 
-    // スケジュール管理
+    // 日報管理
     REPORT("report"),
     REPORTS("reports"),
     REP_COUNT("reports_count"),
