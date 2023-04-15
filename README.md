@@ -20,7 +20,7 @@
 
 ## Usage
 1. 以下のURLにアクセスし、ログイン画面が表示されます。<br>
-``http://localhost:8080/daily_report_system/?action=Auth&command=showLogin``
+``http://localhost:8080/schedule_registry/?action=Auth&command=showLogin``
 2. ユーザー名、パスワードを入力し、ログインします。
 
 ## Authors
